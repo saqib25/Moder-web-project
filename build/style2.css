@@ -1,0 +1,103 @@
+#clasess{
+    background:#f9f2f0;
+}
+
+#clasess .btn{
+    background: -o-linear-gradient(305deg, #f65d5d 0%, #fdb07d 100%);
+    background: linear-gradient(145deg, #f65d5d 0%, #fdb07d 100%);
+    transition:0.9s ease all;
+    width:150px;
+    border:2px solid #ff6666;
+    border-radius: 25px;
+
+    }
+
+#clasess .btn:hover{
+    background:transparent;
+   border:2px solid #ff6666;
+}
+#clasess .btn:active{
+    outline:none;
+    border:none;
+}
+.yoga{
+    color:#f65d5d;
+}
+
+#clasess .card{
+    box-shadow: 3px 3px 3px  #888888;
+    
+}
+
+
+#pro .owl-carousel .owl-nav .owl-prev:hover,
+  .owl-carousel .owl-nav .owl-next:hover{
+      background:none;
+      outline:none;
+      color:black;
+  }
+
+
+/* li{
+    list-style: none;
+}
+
+#pro span i:hover{
+    border-radius: 100%;
+    border:1px solid #fff;
+} */
+
+
+.social-links a{
+    text-align:center;
+      float: right;
+      width: 36px;
+      height: 36px;
+      border: 2px solid #909090;
+      border-radius: 100%;
+      margin-right: 7px; /*space between*/
+      display: flex;
+      align-items: flex-start;
+      transition: all 0.4s;
+      -webkit-transition: all 0.4s;
+  } 
+  .social-links a i{
+      font-size: 20px;
+      align-self:center;
+      /* color: #909090; */
+      transition: all 0.4s;
+      -webkit-transition: all 0.4s;
+      margin: 0 auto;
+  }
+  .social-links a i::before{
+    display:inline-block;
+    text-decoration:none;
+  }
+  .social-links a:hover{
+    background: rgba(0,0,0,0.2);
+  }
+  .social-links a:hover i{
+    color:#fff;
+  }
+/* ============ */
+
+#author{
+    background: #ff6666;
+}
+
+#author p{
+    width:600px;
+    height:100px;
+}
+
+
+#author .owl-theme .owl-dots .owl-dot span{
+    width:50px;
+    background-color: red;
+    color:white;
+}
+
+#author .owl-theme .owl-dot.active  span{
+    width:50px;
+    background-color:black;
+}
