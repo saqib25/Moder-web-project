@@ -1,11 +1,5 @@
-/* .carousel-inner img {
-    width: 100%;
-    height: 50vh;
-  } */
 
-
-/* ======slick carousol===== */
-
+/* =======carousol start====== */
 
 .carousel-inner img{
     /* background-color: #fc03f4; */
@@ -23,10 +17,10 @@ background: linear-gradient(145deg, #f65d5d 0%, #fdb07d 100%);
 
 }
 .carousel-caption h1 {
-   padding-top: 250px;
+   padding-top: 200px;
    position: relative;
    text-transform: uppercase;
-   font-family: 'Roboto', sans-serif;
+   font-family: "Playfair Display", serif;
 
 
 }
@@ -52,6 +46,19 @@ background: linear-gradient(145deg, #f65d5d 0%, #fdb07d 100%);
     border-bottom: 2px solid #fff;
 
 }
+#demo .clr{
+    background:rgba(0,0,0,0.8);
+}
+
+/* ====demo responsive= */
+
+@media screen and (max-width:609px){
+    #demo h1{
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+}
 
 .navbar-toggler{
     background-color:none;
@@ -66,7 +73,7 @@ background: linear-gradient(145deg, #f65d5d 0%, #fdb07d 100%);
 body{
     margin:0;
     padding:0;
-    font-family: 'Roboto', sans-serif;
+	font-family: "Playfair Display", serif;
 
 }
 
@@ -75,9 +82,9 @@ span img{
     border-color:none;
 }
 
-.fa {
+/* .fa {
     color:white !important;
-}
+} */
 
 .carousel-inner > .item {
     position: relative;
@@ -88,49 +95,29 @@ span img{
     transition: 0.2s ease-in-out left;
 }
 
-.fa-map-o{
-    color:red !important;
-}
-.fa-phone{
-    color:red !important;
-}
-
-.fa-clock-o{
-    color:red !important;
-}
-.fa-globe{
-    color:red !important;
-}
-
-
-/* ======== services======= */
-
-
-#services .btn{
+#welcome .btn{
     background: -o-linear-gradient(305deg, #f65d5d 0%, #fdb07d 100%);
     background: linear-gradient(145deg, #f65d5d 0%, #fdb07d 100%);
     transition:0.9s ease all;
-    width:200px;
+    width:150px;
     border:2px solid #ff6666;
     border-radius: 25px;
 
     }
 
-#services .btn:hover{
+    #welcome .btn:hover{
     background:transparent;
    border:2px solid #ff6666;
 }
-#services .btn:active{
+#welcome .btn:active{
     outline:none;
     border:none;
 }
-   
-
-/* ========= services end========== */
 
 
+/* ======carousol end======= */
 
-/* ========== popular clasess======== */
+
 
 
 
@@ -161,86 +148,385 @@ span img{
 }
 
 #clasess .card{
-    box-shadow: 3px 3px 3px  #888888;}
-
-
-/* ======claeess end==== */
-
-/* =======trainer startt====== */
-
-
-#trainer i{
-    color:black !important;
-    padding:8px;
-    transition: 0.6s ease all;
-    border-radius: 50%;
-    border:2px solid lightgray;
-    background:lightgray;
-
-}
-
-#trainer i:hover{
-background:orangered;
-border:none;
-}
-
- 
-
-
-
-
-
-
-
-/* media for welcome */
-
-
-@media screen and (max-width:768px){
-    #services h5,p{
-        text-align: center;
-    }
-
-    #services img{
-        display:block;
-        margin:auto;
-        margin-bottom: 3px;
-    }
+    box-shadow: 3px 3px 3px  #888888;
     
-    img.b {
-        vertical-align: text-top;
-      }
+}
 
-    }      
-/* ===========media for header */
 
-/* @media screen and (max-width:680px){
-    header{
-        display:none;
-    }
-   
+#pro .owl-carousel .owl-nav .owl-prev:hover,
+  .owl-carousel .owl-nav .owl-next:hover{
+      background:none;
+      outline:none;
+      color:black;
+  }
+
+
+/* li{
+    list-style: none;
+}
+
+#pro span i:hover{
+    border-radius: 100%;
+    border:1px solid #fff;
 } */
 
 
+.social-links a{
+    text-align:center;
+      float: right;
+      width: 36px;
+      height: 36px;
+      border: 2px solid #909090;
+      border-radius: 100%;
+      margin-right: 7px; /*space between*/
+      display: flex;
+      align-items: flex-start;
+      transition: all 0.4s;
+      -webkit-transition: all 0.4s;
+  } 
+  .social-links a i{
+      font-size: 20px;
+      align-self:center;
+      /* color: #909090; */
+      transition: all 0.4s;
+      -webkit-transition: all 0.4s;
+      margin: 0 auto;
+  }
+  .social-links a i::before{
+    display:inline-block;
+    text-decoration:none;
+  }
+  .social-links a:hover{
+    background: rgba(0,0,0,0.2);
+  }
+  .social-links a:hover i{
+    color:#fff;
+  }
+/* ============author start========= */
+
+#author{
+    background: #ff6666;
+}
+
+#author p{
+    width:600px;
+    height:100px;
+}
+
+
+#author .owl-theme .owl-dots .owl-dot span{
+    width:50px;
+    background-color: red;
+    color:white;
+}
+
+#author .owl-theme .owl-dot.active  span{
+    width:50px;
+    background-color:black;
+}
+
+
+/* ============author end========= */
+
+
+/*------------------
+  Event section
+---------------------*/
+
+
+.event-video {
+	border-radius: 14px;
+	overflow: hidden;
+	position: relative;
+    margin-right: 8px;
+    /* height:1000px; */
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px),
+only screen and (min-width: 768px) and (max-width: 991px),
+only screen and (min-width: 576px) and (max-width: 767px),
+(max-width: 576px) {
+	.event-video {
+		margin-right: 0;
+		margin-bottom: 50px;
+	}
+}
+
+.event-video img {
+	width: 100%;
+}
+
+.event-video .video-popup {
+	position: absolute;
+	left: calc(50% - 43px);
+	top: calc(50% - 42px);
+}
+
+
+
+@media screen and (max-width:490px){
+    #try li{
+        display: block;
+        width:100%;
+    }
+    #try img{
+        width:100%;
+        display: block;
+        margin-left:auto;
+    }
+    #try h5{
+        margin-left:auto;
+        text-align: center;
+    }
+}
+
+/* ==========events section end========== */
+
+
+/* ======= upcoming start============= */
+
+@media screen and (max-width:480px){
+    #try center img{
+        width:100px;
+        height:100px;
+        margin:auto;
+        display: block;
+    }
+    #try span {
+        display: block;
+        margin: auto;
+    }
+    #clasess .item .card{
+        display: block;
+        margin:auto;
+
+    }
+}
 
 
 
 
 
-/* <div class="row pb-5">
-<div class="col-6 pb-5 pt-4">
-<h4>Lori kennedy</h4>
-<p>Yoga Trainer</p>
-<p class=''>Yoga & Therapy Certificate of Uttarakhand University Sanskrit</p>
-<span><i class="fa fa-facebook " aria-hidden="true"></i>
- <i class="fa fa-instagram " aria-hidden="true"></i> 
- <i class="fa fa-twitter " aria-hidden="true"></i>
- <i class="fa fa-linkedin " aria-hidden="true"></i>
+/* *------------------
+  Pricing section
+---------------------*/ 
 
-</span>  
- 
+.pricing-section {
+    background: #f9f2f0;
+    text-align: center;
+}
 
-</div>
-<div class="col-6 pb-5 ">
-<img src="img/trainer/1.png " style="height:250px;">  
-</div>  
-</div> */
+.pricing-item {
+	text-align: center;
+	background: #fff;
+	padding-bottom: 40px;
+	margin: 15px 0;
+	border-radius: 13px;
+	overflow: hidden;
+	-webkit-box-shadow: 0px 5px 6px rgba(72, 105, 114, 0.15);
+	box-shadow: 0px 5px 6px rgba(72, 105, 114, 0.15);
+	-webkit-transition: all 0.4s;
+	-o-transition: all 0.4s;
+	transition: all 0.4s;
+}
+
+.pricing-item:hover {
+	-webkit-box-shadow: 0px 12px 32px rgba(72, 105, 114, 0.15);
+	box-shadow: 0px 12px 32px rgba(72, 105, 114, 0.15);
+}
+
+.pricing-item .pi-top {
+	height: 156px;
+	padding-top: 26px;
+	background: #f65d5d;
+}
+
+.pricing-item .pi-top h4 {
+	font-family: "Playfair Display", serif;
+	color: #fff;
+	font-size: 22px;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+
+.pricing-item .pi-price {
+	width: 144px;
+	height: 144px;
+	margin: -71px auto 30px;
+	padding-top: 35px;
+	border-radius: 50%;
+	background: #fff;
+	-webkit-box-shadow: 0px 5px 6px rgba(72, 105, 114, 0.15);
+	box-shadow: 0px 5px 6px rgba(72, 105, 114, 0.15);
+}
+
+.pricing-item .pi-price h3 {
+	font-size: 40px;
+	font-weight: 700;
+	color: #666666;
+}
+
+.pricing-item .pi-price p {
+	text-transform: uppercase;
+    color: #999999;
+    text-align: center;
+}
+
+.pricing-item ul {
+	list-style: none;
+	margin-bottom: 20px;
+}
+
+.pricing-item ul li {
+	font-size: 16px;
+	color: #666666;
+    margin-bottom: 12px;
+    text-align: center;
+    margin-right: 18px;
+}
+
+.pricing-item.begginer .pi-top {
+	background: #fdb07d;
+}
+
+.pricing-item.entermediate .pi-top {
+	background: #fa8f70;
+}
+
+.pricing-item.advanced .pi-top {
+	background: #f2786f;
+}
+
+.pricing-item.professional .pi-top {
+	background: #f65d5d;
+}
+
+
+.pricing-section .btn{
+    background: -o-linear-gradient(305deg, #f65d5d 0%, #fdb07d 100%);
+    background: linear-gradient(145deg, #f65d5d 0%, #fdb07d 100%);
+    transition:0.9s ease all;
+    width:125px;
+    border:2px solid #ff6666;
+    border-radius: 25px;
+
+    }
+
+.pricing-section .btn:hover{
+    background:transparent;
+   border:2px solid #ff6666;
+}
+.pricing-section .btn:active{
+    outline:none;
+    border:none;
+}
+
+
+/* ========pricing end======= */
+
+/*------------------
+  Sign up section
+---------------------*/
+
+.signup-map {
+	position: relative;
+	height: 100%;
+	background: #ddd;
+	border-radius: 12px;
+	-webkit-box-shadow: 0px 12px 32px rgba(72, 105, 114, 0.15);
+	box-shadow: 0px 12px 32px rgba(72, 105, 114, 0.15);
+	overflow: hidden;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px),
+only screen and (min-width: 576px) and (max-width: 767px),
+(max-width: 576px) {
+	.signup-map {
+		height: 400px;
+		margin-bottom: 40px;
+	}
+}
+
+.signup-map iframe {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+}
+
+.singup-text {
+	padding-right: 50px;
+	margin-bottom: 40px;
+}
+
+.singup-text h3 {
+	font-weight: 400;
+	font-family: "Playfair Display", serif;
+	margin-bottom: 15px;
+}
+
+.singup-form input,
+.singup-form textarea {
+	width: 100%;
+	height: 49px;
+	padding: 5px 28px;
+	font-size: 14px;
+	color: #999999;
+	border-radius: 50px;
+	margin-bottom: 20px;
+	border: 1px solid #e6e6e6;
+	background: #fafafa;
+}
+
+.singup-form textarea {
+	height: 140px;
+	padding: 15px 28px 10px;
+	border-radius: 20px;
+	resize: none;
+}
+.signup-section .btn{
+    background: -o-linear-gradient(305deg, #f65d5d 0%, #fdb07d 100%);
+    background: linear-gradient(145deg, #f65d5d 0%, #fdb07d 100%);
+    transition:0.9s ease all;
+    width:125px;
+    border:2px solid #ff6666;
+    border-radius: 25px;
+
+    }
+
+.signup-section .btn:hover{
+    background:transparent;
+   border:2px solid #ff6666;
+}
+.singup-form .btn:active{
+    outline:none;
+    border:none;
+}
+/* =====signup end======= */
+
+/* ======gallery start======= */
+.owl-four img{
+    transition:0.6s ease;
+    width:200px;
+}
+.owl-four img:hover{
+transform:scale(1.1);
+}
+
+/* ==gallery end===== */
+
+/* ====footer start===== */
+
+.footer{
+    background: -o-linear-gradient(305deg, #f65d5d 0%, #fdb07d 100%);
+    background: linear-gradient(145deg, #f65d5d 0%, #fdb07d 100%);
+}
+
+.footer li a{
+    color:white;
+}
+
+
+
+
