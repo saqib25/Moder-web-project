@@ -54,10 +54,12 @@ background: linear-gradient(145deg, #f65d5d 0%, #fdb07d 100%);
 
 @media screen and (max-width:609px){
     #demo h1{
-        font-size: 20px;
+        font-size: 18px;
         font-weight: bold;
     }
-
+   #demo p{
+       font-size: 12px;
+   }
 }
 
 .navbar-toggler{
@@ -206,12 +208,16 @@ span img{
 
 #author{
     background: #ff6666;
+    /* line-height: 22px;
+    font-size: 22px;  */
 }
 
 #author p{
-    width:600px;
-    height:100px;
+    width: auto;
+    height: auto;
 }
+
+
 
 
 #author .owl-theme .owl-dots .owl-dot span{
@@ -226,7 +232,12 @@ span img{
 }
 
 
+
 /* ============author end========= */
+
+
+/* =======clasess start====== */
+
 
 
 /*------------------
